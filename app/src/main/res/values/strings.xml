@@ -1,0 +1,28 @@
+<resources>
+    <string name="app_name">Oneminute</string>
+    <!-- 请替换成在语音云官网申请的appid -->
+    <string name="app_id">5ff41968</string>
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+
+    <string name="action_settings">Settings</string>
+
+    <string name="font_small">Small</string>
+    <string name="font_normal">Commonly</string>
+    <string name="font_large">Big</string>
+    <string name="font_super">Biggish</string>
+
+
+    <string name="dialogPicture">Gallery</string>
+    <string name="photo">Photograph</string>
+
+    <string name="settran">Transparent background</string>
+    <string name="jia_mi">Encryption application</string>
+
+    <string name="pattern_create">Set Gesture Password</string>
+    <string name="pattern_check">Verify Gesture Password</string>
+    <string name="pref_key_iat_show">iat_show</string>
+    <string name="text_begin">Please start talking…</string>
+    <string name="text_begin_recognizer">Start audio stream recognition</string>
+
+</resources>

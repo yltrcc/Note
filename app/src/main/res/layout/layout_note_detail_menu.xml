@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/rl_color"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    >
+
+    <ImageView
+
+        android:id="@+id/note_detail_img_menu"
+        style="@style/note_detail_menu"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginRight="15dp"
+        android:layout_marginTop="30dp"
+        android:contentDescription="@null"
+        android:scaleType="fitXY"
+        android:visibility="invisible"
+        />
+    <!-- android:visibility="invisible" -->
+    <note.neusoft.com.note.widget.NoteItemCircleView
+        android:id="@+id/note_detail_img_green"
+        style="@style/note_detail_menu_item"
+        android:layout_alignLeft="@+id/note_detail_img_menu"
+        android:layout_below="@+id/note_detail_img_menu"
+        android:background="#ffcef3d4"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dip"
+        />
+    <!-- android:src="#ffcef3d4"-->
+    <note.neusoft.com.note.widget.NoteItemCircleView
+        android:id="@+id/note_detail_img_blue"
+        style="@style/note_detail_menu_item"
+        android:layout_alignLeft="@+id/note_detail_img_menu"
+        android:layout_below="@+id/note_detail_img_green"
+        android:background="#ffb9e5f2"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dip" />
+
+    <note.neusoft.com.note.widget.NoteItemCircleView
+        android:id="@+id/note_detail_img_purple"
+        style="@style/note_detail_menu_item"
+        android:layout_alignLeft="@+id/note_detail_img_menu"
+        android:layout_below="@+id/note_detail_img_blue"
+
+        android:background="#ffede7e9"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dip" />
+
+    <note.neusoft.com.note.widget.NoteItemCircleView
+        android:id="@+id/note_detail_img_yellow"
+        style="@style/note_detail_menu_item"
+        android:layout_alignLeft="@+id/note_detail_img_menu"
+        android:layout_below="@+id/note_detail_img_purple"
+
+        android:background="#fffbf5b9"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dip" />
+
+    <note.neusoft.com.note.widget.NoteItemCircleView
+        android:id="@+id/note_detail_img_red"
+        style="@style/note_detail_menu_item"
+        android:layout_alignLeft="@+id/note_detail_img_menu"
+        android:layout_below="@+id/note_detail_img_yellow"
+
+        android:background="#fffcd4d3"
+        app:civ_border_color="@color/white"
+        app:civ_border_width="2dip" />
+
+</RelativeLayout>

@@ -1,0 +1,45 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 28
+    buildToolsVersion "28.0.3"
+    defaultConfig {
+        applicationId "demo.neusoft.com.note"
+        minSdkVersion 14
+        targetSdkVersion 28
+        versionCode 1
+        versionName "1.0"
+        testInstrumentationRunner "android.support.test.runner.AndroidJUnitRunner"
+        javaCompileOptions.annotationProcessorOptions.includeCompileClasspath = true
+    }
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+}
+
+dependencies {
+    implementation fileTree(include: ['*.jar'], dir: 'libs')
+    androidTestImplementation('com.android.support.test.espresso:espresso-core:2.2.2', {
+        exclude group: 'com.android.support', module: 'support-annotations'
+    })
+    implementation 'com.android.support:appcompat-v7:28.0.0'
+    implementation 'com.android.support:support-v4:28.0.0'
+    implementation 'com.android.support:design:28.0.0'
+    testImplementation 'junit:junit:4.13.1'
+    implementation 'com.squareup.picasso:picasso:2.5.2'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.github.clans:fab:1.6.1'
+    implementation 'com.jiechic.library:xUtils:2.6.14'
+    implementation 'com.bigkoo:alertview:1.0.3'
+    implementation 'de.hdodenhof:circleimageview:2.1.0'
+    implementation 'com.bigkoo:pickerview:2.1.1'
+    implementation 'com.leo.gesturelibray:GestureLibray:1.1.1'
+    implementation 'com.r0adkll:slidableactivity:2.0.5'
+    implementation 'com.github.traex.rippleeffect:library:1.3'
+    implementation 'com.r0adkll:slidableactivity:2.0.5'
+    implementation 'com.jakewharton:butterknife:7.0.1'
+    implementation 'com.henley.android:lockpattern:1.0.1'
+}

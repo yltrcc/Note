@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_setting"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="note.neusoft.com.note.activity.SettingActivity">
+
+    <RelativeLayout
+        android:id="@+id/top_bar"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:background="@color/colorPrimary">
+
+
+        <ImageButton
+            android:id="@+id/img_back"
+            android:layout_width="20dip"
+            android:layout_height="20dip"
+            android:layout_alignParentLeft="true"
+            android:layout_centerInParent="true"
+            android:layout_marginLeft="7dp"
+            android:background="@color/colorPrimary"
+            android:scaleType="centerInside"
+            android:src="@drawable/back" />
+
+
+        <TextView
+            android:id="@+id/edit_sign_mine_sign"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_centerVertical="true"
+            android:text="setting"
+            android:textColor="#fff"
+            android:textSize="@dimen/text_size_large"
+            android:textStyle="bold" />
+
+
+
+    </RelativeLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/rl_lock"
+        style="@style/option_item_rl">
+
+        <TextView
+            style="@style/option_item_text_parent"
+            android:text="@string/jia_mi"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <note.neusoft.com.note.widget.ToggleButton
+            android:id="@+id/tb_lock"
+            style="@style/option_item_toggleButton"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+    <View
+        android:layout_height="1dp"
+        android:layout_width="match_parent"
+        android:background="#333"/>
+    <RelativeLayout
+        android:id="@+id/rl_Tran"
+        style="@style/option_item_rl">
+
+        <TextView
+            style="@style/option_item_text_parent"
+            android:text="@string/settran"
+            android:textColor="#000"
+            android:textSize="16sp" />
+
+        <note.neusoft.com.note.widget.ToggleButton
+            android:id="@+id/tb_tran"
+            style="@style/option_item_toggleButton"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+</LinearLayout>
